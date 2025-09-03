@@ -1,0 +1,118 @@
+{
+  "id": "common_introductionToServiceCatalog",
+  "name": "Introduction to the service catalog",
+  "duration": 240,
+  "icon": "button-view-launchpoints",
+  "version": 1,
+  "requiredPages": ["Service Catalog"],
+  "index_order": 900,
+  "tasks": [
+    {
+      "id": "get_started",
+      "name": "Get started",
+      "icon": "icon-schedule-start",
+      "steps": [
+        {
+          "name": "Select **Service catalog** to get started.",
+          "detail_content": "This tutorial is an introduction to the service catalog.",
+          "uiElement": ".at-icon-nav-item-catalogs",
+          "coachmark_location": "bottom-right"
+        }
+      ]
+    },
+    {
+      "id": "view_catalog",
+      "name": "Service catalog",
+      "icon": "icon-catalog",
+      "steps": [
+        {
+          "name": "View the service catalog",
+          "detail_content": "The service catalog enables rapid deployment and streamlined automation by providing immediate access to best-practice templates and standardized processes. Create your own catalog items to extend customized automation to your users. Select **Continue**.",
+          "coachmark_location": "bottom-right"
+        },
+        {
+          "name": "Select the dropdown to filter your view of catalog items.",
+          "uiElement": ".tour--objects-list-popover:first",
+          "coachmark_location": "bottom-left"
+        },
+        {
+          "name": "Select the **Applications** catalog item.",
+          "uiElement": ".tour--popover-list-element-applications",
+          "coachmark_location": "left"
+        },
+        {
+          "name": "Application catalog item",
+          "detail_content": "Each catalog item provides an easy way to model an application based on best practices for each application server type. Select **Continue**.",
+          "coachmark_location": "bottom-right"
+        }
+      ]
+    },
+    {
+      "id": "run_catalog_item",
+      "name": "Run a catalog item",
+      "icon": "icon-runtime-run",
+      "steps": [
+        {
+          "name": "Select the dropdown to choose a different catalog item.",
+          "uiElement": ".tour--objects-list-popover:first",
+          "coachmark_location": "bottom-left"
+        },
+        {
+          "name": "Select the **Releases** catalog item",
+          "uiElement": ".tour--popover-list-element-releases",
+          "coachmark_location": "left"
+        },
+        {
+          "name": "Select **Create**",
+          "detail_content": "Use this catalog item to create a release.",
+          "uiElement": ".tour--catalog-item-btn-multistagecdrelease",
+          "coachmark_location": "bottom-right"
+        },
+        {
+          "name": "Select a project",
+          "detail_content": "Your release will be saved with the project you choose. Select **Default** if you do not have a project created.",
+          "uiElement": ".tour--select-object-project",
+          "coachmark_location": "right"
+        },
+        {
+          "name": "Specify a release name, by typing one into the release **Name** field.",
+          "detail_content": "Select **Enter** to proceed.",
+          "coachmark_location": "right",
+          "uiElement": ".tour--entry-object-releaseName"
+        },
+        {
+          "name": "Type a description into the release **Description** field.",
+          "detail_content": "Select **Enter** to proceed.",
+          "coachmark_location": "right",
+          "uiElement": ".tour--textarea-object-releaseDescription"
+        },
+        {
+          "name": "Select a **Release Start Date** and a **Release End Date**.",
+          "coachmark_location": "right",
+          "uiElement": ".tour--date-object-releaseStartDate"
+        },
+        {
+          "name": "Select **OK** to create your release",
+          "uiElement": ".tour--modal-footer-btn-ok",
+          "coachmark_location": "top-left"
+        },
+        {
+          "name": "Select **Yes** to view your new release.",
+          "uiElement": ".tour--confirmation-attention-button-right",
+          "coachmark_location": "bottom-left",
+          "elementWaitTime": 20000
+        },
+        {
+          "name": "View the release.",
+          "detail_content": "This release was created based on your inputs using a catalog item. Continue customizing the release by adding new content from the service catalog to quickly incorporate more automations. Select **Continue**.",
+          "coachmark_location": "bottom-right"
+        },
+        {
+          "name": "Service catalog",
+          "detail_content": "For more information about the service catalog and how to create your own catalog items, refer to [Service catalog](https://docs.cloudbees.com/docs/cloudbees-cd/latest/service-catalog/).",
+          "coachmark_location": "center"
+        }
+      ]
+    }
+  ]
+}
